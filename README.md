@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node Hardening - Lab 9 (K-B302-23-07)
  
 | | |
@@ -90,3 +91,6 @@ Config: [ssh_config_demo](evidence/ssh_config_demo). Test output: [proxyjump-tes
 ```bash
 bash harden.sh        # BLOAT=1, STALE_USERS, KEEP_PW=1, TARGET, REPO options are documented in the script header
 ```
+=======
+# Node-hardenning-Albert-Raude-IT25B
+>>>>>>> bf906dae56694ebe892f27cc5bf850031b1dedb6
