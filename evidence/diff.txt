@@ -1,0 +1,31 @@
+--- /home/opilane/node-hardening/evidence/before.txt	2026-10-23 09:28:35.756711002 +0300
++++ /home/opilane/node-hardening/evidence/after.txt	2026-10-23 09:28:48.124724817 +0300
+@@ -1,14 +1,15 @@
+ State  Recv-Q Send-Q  Local Address:Port Peer Address:PortProcess                                                
+ LISTEN 0      4096    127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=8959,fd=15))            
+ LISTEN 0      1000   10.255.255.254:53        0.0.0.0:*                                                          
+-LISTEN 0      4096          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=5537,fd=3),("systemd",pid=1,fd=60))
++LISTEN 0      4096          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=5537,fd=3),("systemd",pid=1,fd=61))
+ LISTEN 0      4096       127.0.0.54:53        0.0.0.0:*    users:(("systemd-resolve",pid=8959,fd=17))            
+-LISTEN 0      4096             [::]:22           [::]:*    users:(("sshd",pid=5537,fd=4),("systemd",pid=1,fd=61))
++LISTEN 0      4096             [::]:22           [::]:*    users:(("sshd",pid=5537,fd=4),("systemd",pid=1,fd=62))
+   UNIT                        LOAD   ACTIVE SUB     DESCRIPTION
+   console-getty.service       loaded active running Console Getty
+   cron.service                loaded active running Regular background program processing daemon
+   dbus.service                loaded active running D-Bus System Message Bus
+   getty@tty1.service          loaded active running Getty on tty1
++  packagekit.service          loaded active running PackageKit Daemon
+   polkit.service              loaded active running Authorization Manager
+   rsyslog.service             loaded active running System Logging Service
+   ssh.service                 loaded active running OpenBSD Secure Shell server
+@@ -25,8 +26,8 @@
+         ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+         SUB    → The low-level unit activation state, values depend on unit type.
+ 
+-15 loaded units listed.
+-670
++16 loaded units listed.
++599
+ /usr/bin/gpasswd
+ /usr/bin/su
+ /usr/bin/sudo
